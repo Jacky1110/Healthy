@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView9"
+        style="@style/tvMemberList"
+        android:text="@string/pdData"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gl_xpos1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/tvMemberList"
+                android:layout_marginStart="24dp"
+                android:text="@string/pd_01"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/pdTspinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:entries="@array/pd_001"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <CheckBox
+                android:id="@+id/pdSame"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/pd_02"
+                app:layout_constraintEnd_toEndOf="@+id/pdTspinner"
+                app:layout_constraintStart_toStartOf="@+id/pdTspinner"
+                app:layout_constraintTop_toBottomOf="@+id/pdTspinner" />
+
+            <TextView
+                android:id="@+id/textView11"
+                style="@style/tvMemberList"
+                android:layout_marginStart="8dp"
+                android:text="@string/pd_03"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/pdSame"
+                app:layout_constraintStart_toStartOf="@+id/pdSame"
+                app:layout_constraintTop_toBottomOf="@+id/pdSame" />
+
+            <EditText
+                android:id="@+id/pdName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/pd_07"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView11"
+                app:layout_constraintStart_toStartOf="@+id/textView11"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/textView111"
+                style="@style/tvMemberList"
+                android:layout_marginStart="8dp"
+                android:text="@string/pd_04"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/pdSame"
+                app:layout_constraintStart_toStartOf="@+id/pdSame"
+                app:layout_constraintTop_toBottomOf="@+id/pdName" />
+
+            <Spinner
+                android:id="@+id/pdCspinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:entries="@array/pd_001"
+                app:layout_constraintEnd_toStartOf="@+id/gl_xpos1"
+                app:layout_constraintStart_toStartOf="@+id/textView111"
+                app:layout_constraintTop_toBottomOf="@+id/textView111" />
+
+            <Spinner
+                android:id="@+id/pdAspinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:entries="@array/pd_001"
+                app:layout_constraintEnd_toEndOf="@+id/textView111"
+                app:layout_constraintStart_toStartOf="@+id/gl_xpos1"
+                app:layout_constraintTop_toTopOf="@+id/pdCspinner" />
+
+            <EditText
+                android:id="@+id/pdAdress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/pd_08"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView11"
+                app:layout_constraintStart_toStartOf="@+id/textView11"
+                app:layout_constraintTop_toBottomOf="@+id/pdCspinner" />
+
+            <TextView
+                android:id="@+id/textView12"
+                style="@style/tvMemberList"
+                android:layout_marginStart="8dp"
+                android:text="@string/pd_05"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/pdSame"
+                app:layout_constraintStart_toStartOf="@+id/pdSame"
+                app:layout_constraintTop_toBottomOf="@+id/pdAdress" />
+
+            <EditText
+                android:id="@+id/pdPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:hint="@string/pd_09"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView11"
+                app:layout_constraintStart_toStartOf="@+id/textView11"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/textView122"
+                style="@style/tvMemberList"
+                android:layout_marginStart="8dp"
+                android:text="@string/pd_06"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/pdSame"
+                app:layout_constraintStart_toStartOf="@+id/pdSame"
+                app:layout_constraintTop_toBottomOf="@+id/pdPhone" />
+
+            <EditText
+                android:id="@+id/pdEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:hint="@string/pd_10"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView11"
+                app:layout_constraintStart_toStartOf="@+id/textView11"
+                app:layout_constraintTop_toBottomOf="@+id/textView122" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textView101"
+                style="@style/tvMemberList"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/pd_11"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:ems="10"
+                android:entries="@array/pd_001"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/textView101"
+                app:layout_constraintStart_toStartOf="@+id/textView101"
+                app:layout_constraintTop_toBottomOf="@+id/textView101" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/pd_14"
+                app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+            <TextView
+                android:id="@+id/textView103"
+                style="@style/tvMemberList"
+                android:text="@string/pd_15"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/checkBox3"
+                app:layout_constraintStart_toStartOf="@+id/textView101"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+
+            <Spinner
+                android:id="@+id/pdBillC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/pd_1501"
+                app:layout_constraintEnd_toEndOf="@+id/checkBox3"
+                app:layout_constraintStart_toStartOf="@+id/textView103"
+                app:layout_constraintTop_toBottomOf="@+id/textView103" />
+
+            <TextView
+                android:id="@+id/pdTitle"
+                style="@style/tvMemberList"
+                android:layout_marginTop="16dp"
+                android:text="@string/pd_21"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/pdBillC"
+                app:layout_constraintTop_toBottomOf="@+id/pdBillC" />
+
+            <TextView
+                android:id="@+id/pdBill001"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/pd_22"
+                app:layout_constraintEnd_toEndOf="@+id/pdBillC"
+                app:layout_constraintStart_toStartOf="@+id/pdTitle"
+                app:layout_constraintTop_toBottomOf="@+id/pdTitle" />
+
+            <EditText
+                android:id="@+id/etInvoiceNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_round_gray"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/pdBill001"
+                app:layout_constraintStart_toStartOf="@+id/pdBill001"
+                app:layout_constraintTop_toBottomOf="@+id/pdBill001" />
+
+            <TextView
+                android:id="@+id/pdBill00201"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/pd_24"
+                app:layout_constraintEnd_toEndOf="@+id/etInvoiceNumber"
+                app:layout_constraintStart_toStartOf="@+id/etInvoiceNumber"
+                app:layout_constraintTop_toBottomOf="@+id/etInvoiceNumber" />
+
+            <TextView
+                android:id="@+id/pdBill003"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/pd_25"
+                app:layout_constraintEnd_toEndOf="@+id/pdBill00201"
+                app:layout_constraintStart_toStartOf="@+id/pdBill00201"
+                app:layout_constraintTop_toBottomOf="@+id/pdBill00201" />
+
+            <EditText
+                android:id="@+id/etCompanyTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_round_gray"
+                android:ems="10"
+                android:hint="@string/pd_2501"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/pdBill003"
+                app:layout_constraintStart_toStartOf="@+id/pdBill003"
+                app:layout_constraintTop_toBottomOf="@+id/pdBill003" />
+
+            <TextView
+                android:id="@+id/pdBill00302"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/pd_26"
+                app:layout_constraintEnd_toEndOf="@+id/etCompanyTitle"
+                app:layout_constraintStart_toStartOf="@+id/etCompanyTitle"
+                app:layout_constraintTop_toBottomOf="@+id/etCompanyTitle" />
+
+            <EditText
+                android:id="@+id/etUniformNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_round_gray"
+                android:ems="10"
+                android:hint="@string/pd_2601"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/pdBill00302"
+                app:layout_constraintStart_toStartOf="@+id/pdBill00302"
+                app:layout_constraintTop_toBottomOf="@+id/pdBill00302" />
+
+            <TextView
+                android:id="@+id/pdBill00304"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/pd_06"
+                app:layout_constraintEnd_toEndOf="@+id/etUniformNo"
+                app:layout_constraintStart_toStartOf="@+id/etUniformNo"
+                app:layout_constraintTop_toBottomOf="@+id/etUniformNo" />
+
+            <EditText
+                android:id="@+id/pdBill00305"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_round_gray"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/pdBill00304"
+                app:layout_constraintStart_toStartOf="@+id/pdBill00304"
+                app:layout_constraintTop_toBottomOf="@+id/pdBill00304" />
+
+            <View
+                android:id="@+id/view22"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="32dp"
+                android:background="#000000"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pdBill00305" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/cdTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/pd_16"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <TextView
+        android:id="@+id/cdFreigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/pd_17"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/cdTotal"
+        app:layout_constraintTop_toBottomOf="@+id/cdTotal" />
+
+    <TextView
+        android:id="@+id/cdCoupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/pd_18"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/cdTotal"
+        app:layout_constraintTop_toBottomOf="@+id/cdFreigh" />
+
+    <TextView
+        android:id="@+id/cdBonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/pd_19"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/cdTotal"
+        app:layout_constraintTop_toBottomOf="@+id/cdCoupon" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cdBonus" />
+
+    <TextView
+        android:id="@+id/cdAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/pd_19"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/cdTotal"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

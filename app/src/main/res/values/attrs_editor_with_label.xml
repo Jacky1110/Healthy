@@ -1,0 +1,14 @@
+<resources>
+    <declare-styleable name="EditorWithLabel">
+        <attr name="ewlLabelString" format="string" />
+        <attr name="ewlLabelColor" format="color" />
+        <attr name="ewlLabelDimension" format="dimension" />
+        <attr name="ewlTextHint" format="string" />
+        <attr name="ewlTextColor" format="color" />
+        <attr name="ewlTextDimension" format="dimension" />
+        <attr name="ewlTextInputType" format="enum" />
+    </declare-styleable>
+
+
+
+</resources>

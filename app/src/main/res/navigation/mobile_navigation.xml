@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.jotangi.healthy.ui.home.HomeMainFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home_main" />
+
+    <fragment
+        android:id="@+id/navigation_mall"
+        android:name="com.jotangi.healthy.ui.account.AccountRegisterFragment"
+        android:label="@string/title_mall"
+        tools:layout="@layout/fragment_account_register" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.jotangi.healthy.ui.account.AccountLoginFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account_login" />
+<!--    <fragment-->
+<!--        android:id="@+id/tabViewFragment"-->
+<!--        android:name="com.jotangi.wuxuw0830.ui.mylittlemin.TabViewFragment"-->
+<!--        android:label="TabViewFragment" />-->
+</navigation>

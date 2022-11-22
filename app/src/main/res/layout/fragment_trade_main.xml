@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Fragment_Account"
+    tools:context=".ui.account.AccountRuleFragment"
+    >
+
+    <TextView
+        android:id="@+id/tv_trade"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trade_main_item_height"
+        android:layout_marginTop="@dimen/trade_main_item_top_margin"
+        android:gravity="center"
+        android:background="@drawable/rectangle_outline_grayc0"
+        android:textSize="@dimen/trade_main_item_textsize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/trade_main_item1"
+        />
+
+    <TextView
+        android:id="@+id/tv_order"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trade_main_item_height"
+        android:layout_marginTop="@dimen/trade_main_item_top_margin"
+        android:gravity="center"
+        android:background="@drawable/rectangle_outline_grayc0"
+        android:textSize="@dimen/trade_main_item_textsize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_trade"
+        android:text="@string/trade_main_item2"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

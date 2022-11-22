@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/circle_white"
+    tools:context=".HpayMall.Mall.CDetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cdLa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/cdBcard"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/alpha"
+            app:layout_constraintDimensionRatio="1:0.7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!--            <androidx.viewpager.widget.ViewPager-->
+            <!--                android:id="@+id/cdVe"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center_horizontal"-->
+            <!--                android:visibility="gone" />-->
+
+        </ImageView>
+
+        <!--        <me.relex.circleindicator.CircleIndicator-->
+        <!--            android:id="@+id/cdCi"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="36dp"-->
+        <!--            android:elevation="2dp"-->
+        <!--            android:visibility="gone"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/cdBuy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cdLa">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/cdname"
+                style="@style/tvMemberList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="EECP療程"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/cdDollar"
+                style="@style/tvMemberList"
+                android:text="NT$5,000"
+                app:layout_constraintStart_toStartOf="@+id/cdname"
+                app:layout_constraintTop_toBottomOf="@+id/cdname" />
+
+            <View
+                android:id="@+id/button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/background_count"
+                app:layout_constraintStart_toStartOf="@+id/cdDollar"
+                app:layout_constraintTop_toBottomOf="@+id/cdDollar" />
+
+            <ImageButton
+                android:id="@+id/cdReduce"
+                android:layout_width="20dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/alpha"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_reduce"
+                app:layout_constraintBottom_toBottomOf="@+id/button"
+                app:layout_constraintStart_toStartOf="@+id/button"
+                app:layout_constraintTop_toTopOf="@+id/button"
+                app:tint="@color/cadetblue" />
+
+            <ImageButton
+                android:id="@+id/cdPlus"
+                android:layout_width="20dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/alpha"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_plus"
+                app:layout_constraintBottom_toBottomOf="@+id/button"
+                app:layout_constraintEnd_toEndOf="@+id/button"
+                app:layout_constraintTop_toTopOf="@+id/button"
+                app:tint="@color/cadetblue" />
+
+            <TextView
+                android:id="@+id/cdCount"
+                style="@style/Fragment_Title_TextView"
+                android:text="0"
+                android:textAlignment="gravity"
+                app:layout_constraintBottom_toBottomOf="@+id/button"
+                app:layout_constraintEnd_toStartOf="@+id/cdPlus"
+                app:layout_constraintStart_toEndOf="@+id/cdReduce"
+                app:layout_constraintTop_toTopOf="@+id/button" />
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/tvMemberList"
+
+                android:layout_marginTop="24dp"
+                android:text="商品描述"
+                app:layout_constraintEnd_toEndOf="@+id/button"
+                app:layout_constraintStart_toStartOf="@+id/button"
+                app:layout_constraintTop_toBottomOf="@+id/button" />
+
+            <TextView
+                android:id="@+id/cdDes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
+                android:text="@string/test_descr"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/cdT1"
+                style="@style/tvMemberList"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="24dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="折扣價"
+                android:textColor="@color/c_b21b25_100"
+                app:layout_constraintBottom_toBottomOf="@+id/cdDollar"
+                app:layout_constraintStart_toEndOf="@+id/cdDollar"
+                app:layout_constraintTop_toTopOf="@+id/cdDollar" />
+
+            <TextView
+                android:id="@+id/cdT2"
+                style="@style/tvMemberList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="@color/c_b21b25_100"
+                app:layout_constraintBottom_toBottomOf="@+id/cdT1"
+                app:layout_constraintStart_toEndOf="@+id/cdT1"
+                app:layout_constraintTop_toTopOf="@+id/cdT1" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline129"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/cdAdd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_rounded_white"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="加入購物車"
+        android:textColor="@color/cadetblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline129"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/cdBuy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_round_green"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="立即購買"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline129" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

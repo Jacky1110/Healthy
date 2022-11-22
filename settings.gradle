@@ -1,0 +1,5 @@
+rootProject.name = "Healthy"
+include ':app'
+include ':accountutils'
+include ':baseutils'
+include ':Jotangi2021'

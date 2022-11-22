@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="0dp"
+    android:insetRight="0dp"
+    android:insetTop="0dp"
+    android:insetBottom="0dp">
+
+    <shape android:shape="rectangle">
+        <solid android:color="@android:color/transparent"/>
+        <!--設定圓角-->
+        <corners android:radius="0dp"/>
+        <!--設定邊框線的寬度和顏色-->
+        <stroke
+            android:width="2dp"
+            android:dashWidth="16dp"
+            android:dashGap="16dp"
+            android:color="@color/gray_80" />
+    </shape>
+
+</inset>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="@dimen/itemview_trade_record_horizontal_margin"
+    android:insetRight="@dimen/itemview_trade_record_horizontal_margin"
+    android:insetTop="10dp"
+    android:insetBottom="10dp">
+
+    <shape>
+        <size android:height="2dp" />
+        <solid android:color="@color/gray_c0" />
+    </shape>
+
+</inset>

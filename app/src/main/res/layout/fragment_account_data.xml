@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Fragment_Account"
+    tools:context=".ui.account.AccountRegisterFragment" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- 輸入姓名 -->
+            <TextView
+                android:id="@+id/tv_name_label"
+                style="@style/EditWithLabelView_Label"
+                android:text="@string/name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_input_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name_label">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_name"
+                    style="@style/EditWithLabelView_Data"
+                    android:hint="@string/name_hint"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- 性別-->
+            <TextView
+                android:id="@+id/tv_sex_label"
+                style="@style/EditWithLabelView_Label"
+                android:text="@string/sex"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/rg_sex"
+                app:layout_constraintTop_toBottomOf="@+id/layout_input_name" />
+            <RadioGroup
+                android:id="@+id/rg_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/editwithlabel_data_margin_start"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/tv_birthdaty_label"
+                app:layout_constraintTop_toBottomOf="@+id/tv_sex_label">
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_background_selector"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="@string/man"
+                    android:textColor="@color/radio_text_selector" />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_background_selector"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="@string/woman"
+                    android:textColor="@color/radio_text_selector" />
+
+            </RadioGroup>
+            <!-- 輸入生日 -->
+            <TextView
+                android:id="@+id/tv_birthdaty_label"
+                style="@style/EditWithLabelView_Label"
+                android:text="@string/birthday"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rg_sex" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_input_birthday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_birthdaty_label">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_birthday"
+                    style="@style/EditWithLabelView_Data"
+                    android:hint="@string/birthday_hint"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- 輸入手機號碼 -->
+            <TextView
+                android:id="@+id/tv_phone"
+                style="@style/EditWithLabelView_Label"
+                android:text="@string/mobile_number"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_input_birthday" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_input_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_phone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_phone"
+                    style="@style/EditWithLabelView_Data"
+                    android:enabled="false"
+                    android:hint="@string/mobile_number_hint_for_register"
+                    android:inputType="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- 輸入家裡號碼-->
+            <TextView
+                android:id="@+id/tv_home_number_label"
+                style="@style/EditWithLabelView_Label"
+                android:text="@string/home_number"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_input_phone" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_input_home_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_home_number_label">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_home_number"
+                    style="@style/EditWithLabelView_Data"
+                    android:hint="@string/home_number_hint"
+                    android:inputType="number|textPassword"
+                    android:maxLength="12" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- 輸入Email -->
+            <TextView
+                android:id="@+id/tv_email_label"
+                style="@style/EditWithLabelView_Label"
+                android:text="@string/email"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_input_home_number" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_input_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_email_label">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_email"
+                    style="@style/EditWithLabelView_Data"
+                    android:hint="@string/email_hint"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- 註冊會員按鈕 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_register"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/button_backgroung_normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_input_email"
+                app:layout_constraintWidth_percent="0.3"
+                app:layout_constraintDimensionRatio="@dimen/normal_button_dimension_ratio_2_1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginBottom="9dp"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:text="@string/button_modify_data"
+                    android:textColor="@color/txtcolor"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

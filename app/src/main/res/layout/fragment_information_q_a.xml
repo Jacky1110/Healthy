@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/navViewColor"
+    tools:context=".InformationQAFragment">
+
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ISview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView19"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="店家資訊"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/view4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rectangle_outline_grayc0" />
+
+            <LinearLayout
+                app:layout_constraintBottom_toBottomOf="@+id/view4"
+                app:layout_constraintEnd_toEndOf="@+id/view4"
+                app:layout_constraintStart_toStartOf="@+id/view4"
+                app:layout_constraintTop_toTopOf="@+id/view4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="店家：盛雲電商股份有限公司"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/border_line"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="電話：02-2799-7868"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/border_line"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="地址：台北市內湖區內湖路一段300號3樓"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView27"
+                app:layout_constraintEnd_toEndOf="@+id/view4"
+                app:layout_constraintStart_toStartOf="@+id/view4"
+                app:layout_constraintTop_toBottomOf="@+id/view4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="購買前請先詳細閱讀"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rectangle_outline_grayc0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView27">
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/scrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:id="@+id/tv_buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="使用者權益及說明(健康配2022.06.24)\n\n1. 為維護您的權益，請於收到商品後盡速確認商品的數量及內容是否正確，如收到的商品內容物有誤時，請先拍照並連繫電話客服，由專人為您服務並協助處理。\n\n2. 依照《消費者保護法》規定，健康配商城提供商品到貨七日猶豫期(注意！猶豫期非試用期)。\n\n3. 依照《消費者保護法》第19條規定及《通訊交易解除權合理例外情事適用準則》規定，略以：易於腐敗商品、以拆封之電腦軟體或影音商品、非以有形媒介提供之數位內容，或一經提供即為完成之線上服務，已拆封之個人衛生用品等商品，經業者事前告知者，消費者無法解除契約，也就是無法退貨。\n因此，如您訂購食品類、個人用品類等商品，一經拆封、食用便無法辦理退換貨。如您訂購智慧手錶，經配戴或連結手機後則視為開通，亦無法辦理退貨。如屬商品瑕疵(需提供明確暇疵說明)，可於七日內提出提供換貨(非退貨)服務。\n\n4. 網頁商品會因為使用不同的品牌螢幕以及解析度不同，造成圖片顏色呈現略有不同，請以實品顏色為準。如訂購食品類恕無法指定配送日期與時段，如訂購需冷藏/冷凍商品，請務必留下隨時可收貨並冷藏保存的地址與連絡電話，以免食品產生腐壞或產生爭議。\n\n5. 若您對於訂購之商品欲辦理退換貨時，提醒您，商品退貨時必須回復原狀，亦即必須回復至您收到商品時的原始狀態 (包含完整商品、附件、原內外包裝、說明文件、贈品等)，若為部分商品退貨則針對您已使用或保留之商品應另以市價計價，否則將影響您退貨的權限。如果產品外盒若因人為刮傷、損壞，恕不受理退換貨或依照市價賠償。\n退貨商品收回並經工作人員確認商品數量無誤後，會進行線上刷退並作廢發票，退款實際入帳日期，依各發卡銀行入帳日不同有所差異，請您洽詢發卡銀行確認。如訂購商品有使用到「優惠券」、「折扣抵用券」等，辦理退貨後相關優惠無法重新提供。\n\n如有任何疑問，可聯繫電話客服，由專人為您服務並協助處理。"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                </androidx.core.widget.NestedScrollView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/btnIs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/circle_background"
+                android:text="已閱讀"
+                android:textColor="@color/cadetblue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

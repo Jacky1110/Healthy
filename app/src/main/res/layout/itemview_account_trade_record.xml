@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/itemview_trade_record_horizontal_padding"
+    android:paddingEnd="@dimen/itemview_trade_record_horizontal_padding"
+    android:paddingTop="@dimen/itemview_trade_record_vertical_padding"
+    android:paddingBottom="@dimen/itemview_trade_record_vertical_padding"
+    android:background="@drawable/rectangle_outline_grayc0"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="診所"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tv_datetime"/>
+    <TextView
+        android:id="@+id/tv_datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="110年8月31日 10:10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+    <TextView
+        android:id="@+id/tv_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="$1000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_datetime" />
+</androidx.constraintlayout.widget.ConstraintLayout>

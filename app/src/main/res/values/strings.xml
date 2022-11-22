@@ -1,0 +1,314 @@
+<resources>
+    <string name="app_name">健康配</string>
+
+    <string name="proj_scheme">hpay</string>
+    <string name="proj_scheme_host">payment</string>
+    <string name="proj_scheme_home_main">home</string>
+    <string name="proj_scheme_account_trade">trade</string>
+
+    <string name="main_func_home">首頁</string>
+
+    <string name="title_home">  </string>
+    <string name="title_mall">健康商城</string>
+    <string name="title_account">會員中心</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="button_confirm">確認</string>
+    <string name="button_ok">確定</string>
+    <string name="button_cancel">取消</string>
+    <string name="copy">複製</string>
+    <string name="cut">裁切</string>
+    <string name="camera">照相</string>
+    <string name="gallery">圖庫</string>
+
+    <string name="sex">性別</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="birthday">生日</string>
+    <string name="birthday_hint">請輸入您的生日ex:2000-08-08</string>
+
+    <string name="login">登入</string>
+    <string name="logout">登出</string>
+    <string name="register">註冊</string>
+    <string name="account_rule">會員使用條款</string>
+
+    <string name="welcome_back">歡迎回來</string>
+    <string name="mobile_number">手機號碼</string>
+    <string name="home_number">家裡號碼</string>
+    <string name="home_number_hint">請輸入您家裡的電話號碼</string>
+    <string name="mobile_number_hint">請輸入您的手機號碼</string>
+    <string name="password">密碼</string>
+    <string name="password_hint">請輸入您的密碼</string>
+    <string name="forget_password"><u>忘記密碼?</u></string>
+    <string name="user_rule"><u>使用者條款與須知</u></string>
+
+    <string name="welcome_register">歡迎加入會員</string>
+    <string name="name">姓名</string>
+    <string name="name_hint">請輸入您的姓名</string>
+    <string name="email">Email信箱</string>
+    <string name="email_hint">請輸入您的Email信箱</string>
+    <string name="mobile_number_hint_for_register">請輸入您的手機號碼作為往後的登入帳號</string>
+    <string name="password_hint_for_register">請輸入6–12位英數密碼</string>
+    <string name="invite_code">邀請碼</string>
+    <string name="invite_code_hint">請輸入好友邀請碼</string>
+    <string name="register_agree_check_title">我同意以此資料註冊會員，並同意</string>
+    <string name="button_account_rule"><font color="#202020">我同意以此資料註冊會員，並同意</font><font color="#00ADAD"><u>會員使用條款</u></font></string>
+    <string name="register_fail">註冊失敗</string>
+    <string name="account_already_exist">帳號已存在</string>
+    <string name="button_register">註冊會員</string>
+
+    <string name="err_field_empty">請輸入%1$s</string>
+    <string name="err_field_format">%1$s格式錯誤</string>
+    <string name="err_point_type">%1$d格式錯誤</string>
+    <string name="err_exception">格式異常</string>
+    <string name="money_string">$%1$d</string>
+    <string name="point_value">%1$d點</string>
+    <string name="point_remain_note">%1$s即將到期點數%2$d點</string>
+    <string name="point_remain_zero">—</string>
+
+    <string name="failmsg"><strong>註冊失敗</strong></string>
+
+    <string name="forget_password_title">忘記密碼</string>
+    <string name="reset_password_title">請重新設定您的新密碼</string>
+    <string name="identity_code">驗證碼</string>
+    <string name="identity_code_hint">請輸入驗證碼</string>
+    <string name="button_identity_code">獲取驗證碼</string>
+    <string name="new_password">新密碼</string>
+    <string name="new_password2">再次輸入新密碼</string>
+    <string name="new_password2_hint">請輸入新密碼</string>
+    <string name="button_send">送出</string>
+    <string name="minute_seconds">%1$02d：%2$02d</string>
+
+    <string name="button_modify_data">修改資料</string>
+
+    <!-- 會員首頁選項清單 -->
+    <string name="account_listitem_data">會員資料</string>
+    <string name="account_listitem_record">交易記錄</string>
+    <string name="account_listitem_point">健康Point</string>
+    <string name="account_listitem_rule">使用者條款</string>
+    <string name="account_listitem_qa">常見問題</string>
+    <string name="account_listitem_member_delete">刪除帳號</string>
+    <string name="account_qa">使用者消費權益及說明</string>
+
+    <string name="point_get">獲取紅利</string>
+    <string name="point_cancel">取消紅利</string>
+    <string name="point_used">使用紅利</string>
+    <string name="point_record">點數記錄</string>
+    <string name="point_note">註:最多顯示一年之內的資料</string>
+    <string name="point_record_not_found">暫無點數記錄</string>
+
+    <string name="trade_record_not_found">暫無交易記錄</string>
+
+    <string name="trade_main_item1">付款交易記錄</string>
+    <string name="trade_main_item2">健康商城訂單</string>
+    <string name="coupon_0">優惠券</string>
+    <string name="coupon_1">門市優惠券</string>
+    <string name="coupon_2">健康商城優惠券</string>
+    <string name="trade_my_order">我的訂單</string>
+
+    <string name="scan_pay">掃描支付</string>
+    <string name="scan_note">對準條碼至框內即可掃描</string>
+    <string name="buy_car">購物車</string>
+    <string name="buy_car1">行動支付</string>
+
+    <!--    行動支付-->
+    <string name="recommend_code">推薦碼</string>
+    <string name="recommend_coupon">優惠券</string>
+    <string name="recommend_record">推薦好友紀錄</string>
+    <string name="recommend_info1"><font color="#f00000">邀請好友下載</font><font color="#00ADAD">健康配APP</font></string>
+    <string name="recommend_info2"><font color="#00ADAD">您與好友皆可獲得</font><font color="#f00000">100元健康point</font></string>
+    <string name="recommend_rule">推薦條款與細則說明</string>
+    <string name="your_recommend_code">你的推薦碼</string>
+    <string name="invite_friend">邀請朋友</string>
+    <string name="invited_friends_list">成功邀請朋友</string>
+    <string name="people_count">%1$d位</string>
+    <string name="invite_friend_message">%1$s 已贈送100元健康point給您，只要註冊健康配APP時輸入推薦碼%2$s...</string>
+    <string name="recommended_phone">被推薦人電話：</string>
+    <string name="recommend_award">推薦奬勵：</string>
+    <string name="register_date">加入日期：</string>
+    <string name="no_recommend_data">您沒有推薦好友紀錄，趕快去推薦好友吧！</string>
+    <string name="award_message">%1$d元%2$s</string>
+
+    <string name="pref_key_rear_camera_preview_size" translatable="false">rcpvs</string>
+    <string name="pref_key_rear_camera_picture_size" translatable="false">rcpts</string>
+    <string name="pref_key_front_camera_preview_size" translatable="false">fcpvs</string>
+    <string name="pref_key_front_camera_picture_size" translatable="false">fcpts</string>
+    <string name="pref_key_camerax_rear_camera_target_resolution" translatable="false">crctas</string>
+    <string name="pref_key_camerax_front_camera_target_resolution" translatable="false">cfctas</string>
+    <string name="pref_key_camera_live_viewport" translatable="false">clv</string>
+
+    <!-- Strings for cut image activity -->
+    <string name="msg_image_from">請選擇照片來源</string>
+    <!-- Strings for info preference. -->
+    <string name="pref_title_info_hide" translatable="false">Hide detection info</string>
+    <string name="pref_key_info_hide" translatable="false">ih</string>
+    <!--  ♡♡♡♡♡♡♡♡♡♡♡Kelly 's Note♡♡♡♡♡♡´ސު｀
+    if user terms upadte you need chage HeadNumer(001)to (00?) -->
+    <string name="rule_msg">
+        001
+        盛雲電商 服務條款\n版本日期：2022年06月07日\n\n本條款涵蓋的範圍\n我們瞭解您可能會想略過本《服務條款》，但請務必詳閱，瞭解我們在您使用盛雲電商服務時致力遵守的原則，以及我們期許您遵守的行為準則。\n\n本《服務條款》反映出盛雲電商的業務營運模式、本公司適用的法律，以及我們堅信的原則。因此，當您與我們的服務互動時，本《服務條款》有助於定義盛雲電商與您的關係。例如，本條款包括下列主題：\n我們的服務原則，說明我們提供及開發服務的方式\n您的行為準則，說明使用服務時須遵守的一些規則\n盛雲電商服務中的內容，說明您在盛雲電商服務中所接觸內容的智慧財產權歸屬 (無論內容是您、盛雲電商或其他人所有)\n發生問題或意見不合時，說明您擁有的其他合法權利，以及我們在有人違反本條款時採取的對應措施\n當您使用我們的服務，即表示您已閱讀、瞭解並同意接受本服務條款之所有內容，因此請務必詳閱本條款內容。\n\n條款\n\n服務供應商\n盛雲電商服務是由以下實體提供，該實體也是您的合約簽訂對象：\n\n盛雲電商股份有限公司\n根據中華民國法律成立，並根據中華民國法律營運的公司\n\n中國民國 114 台北市內湖區內湖路一段300號3樓\n\n年齡規定\n如果您未達自行管理盛雲電商帳戶的規定年齡，您必須取得家長或法定監護人同意，才能使用盛雲電商帳戶。請與您的家長或法定監護人一起閱讀本條款。\n\n如果您是家長或法定監護人，且允許子女使用這些服務，您必須遵守本條款，並為子女在這些服務中的活動負責。\n\n您與盛雲電商的關係\n本條款有助於界定您與盛雲電商之間的關係。從廣義來說，我們會在您同意遵守本條款後，授權您使用我們的服務。本條款反映了盛雲電商經營企業和營利的方式。 本條款中提及的「盛雲電商」、「我們」和「我們的」是指 盛雲電商股份有限公司 及其關聯企業。\n\n我們的服務原則\n提供廣泛多元的實用服務\n\n我們提供的各種服務皆適用本條款，包括：\n•	應用程式和網站 (例如 數體健服務)\n•	平台 (例如 健康配服務)\n•	整合式服務 (例如嵌入到其他公司應用程式或網站的數體健服務)\n•	裝置 (例如 Digimed智慧手錶)\n其中有許多服務也包含您可以串流資料或互動的內容。\n我們的服務能夠互相搭配運作，方便您從一項活動接續執行下一項活動。舉例來說，如果數體健活動包含睡眠資料與分析建議，只要點選該建議，健康配就會提供該建議商品的購物服務。\n\n開發、改善及更新盛雲電商服務\n \n我們一直在開發新的技術和功能，以改善服務品質。舉例來說，我們利用人工智慧和機器學習技術提供即時健康建議服務。在持續改善服務品質的過程中，我們有時會新增或移除功能、提高或降低我們的服務限制，以及推出新服務或關閉舊服務。如果服務需要使用或包含可下載的軟體，該軟體可能會在新版本或新功能推出時，在您的裝置上自動更新。有些服務可讓您調整自動更新設定。\n如果我們做出的重大變更會對您的服務使用行為造成負面影響，或是如果我們停止提供服務，我們會提前合理通知您，但如果有緊急狀況 (例如防止濫用行為、配合法律要求或處理安全性和可操作性問題)，則不須提前通知。\n\n您的行為準則\n請遵守本條款及服務專屬附加條款\n \n我們允許您持續使用盛雲電商各項服務，惟您必須遵守：\n•	本條款\n•	服務專屬附加條款，其中可能包括額外年齡規定等附加規定\n我們也會提供各項政策規範及其他資源，協助解答常見問題及制定盛雲電商服務使用準則。這些資源包括我們的《隱私權政策》及其他可在盛雲電商政策網站上閱覽的頁面。\n雖然我們授權您使用盛雲電商各項服務，但我們在服務中擁有的智慧財產權仍為盛雲電商所有。\n\n尊重他人\n \n為了維護所有人互相尊重的環境，請務必恪守下列基本行為準則：\n•	遵守適用法律，包括出口管制、制裁和人口販運法律\n•	尊重他人的權利，包括隱私權和智慧財產權\n•	切勿辱罵或傷害他人或自己 (或是威脅或鼓吹他人從事這些行為)，例如誤導、詐騙、非法冒用他人身分、誹謗、霸凌、騷擾或跟蹤他人\n•	切勿濫用、破壞、干擾服務，或是導致服務中斷，例如以詐欺或詐騙手法存取或使用服務、導入惡意軟體、濫發垃圾內容、入侵或規避我們的系統或保護措施。\n我們的服務專屬附加條款及政策針對適當行為提供了額外詳細說明，任何使用這些服務的人都必須遵守。如果您發現其他人未遵守這些規則，在盛雲電商的多項服務中皆可檢舉濫用行為。如果我們對您檢舉的濫用行為採取行動，也設有一套處理程序，相關說明請參閱在發生問題時採取行動一節。\n\n您的內容的使用權限\n \n我們的部分服務可讓您上傳、提交、儲存、傳送、接收或分享您的內容。您並無義務向盛雲電商提供任何內容，且可以自由選擇要提供的內容。如果您選擇上傳或分享內容，請確認您擁有相關必要權利，且該內容無違法之虞。\n\n授權\n您的內容仍屬於您所有。換句話說，您仍保有自己內容的所有權利。 舉例來說，您擁有您健康資料 (例如您量測血壓數值) 的所有權。您也可能有權分享其他人的內容，前提是您已取得對方許可。\n如果您限制我們使用您的內容，我們會需要取得您的許可。您則透過本授權將相關權限授予盛雲電商。\n\n本授權涵蓋的項目\n只要您的內容受到權利保護，即在本授權涵蓋範圍內。\n\n本授權未涵蓋的項目\n\n•	本授權未涵蓋下列類型的內容：\n•	您提供的公開事實資訊。這類資訊屬常識範疇，人人皆可免費使用，因此不必取得使用授權。\n•	您提供的意見回饋，例如改善服務的建議。如要瞭解意見回饋相關規定，請參閱下方的與服務相關的通訊內容一節。\n\n範圍\n您授與我們的授權具有以下性質：\n•	全球性，表示本授權在全球各地皆有效\n•	非專屬，表示您可以將自己的內容授權他人使用\n•	免權利金，表示毋須就本授權支付任何金錢費用\n\n權利\n本授權允許盛雲電商執行下列動作：\n•	管理、重製、散布、傳播及使用您的內容；比方說，將您的內容儲存在我們的系統上，供您隨時隨地存取\n•	發布、公開傳輸或公開展示您的內容 (前提是您已開放他人查看這些內容)\n•	修改您的內容以及根據您的內容創作衍生作品，例如重新設定您的內容格式或進行翻譯\n•	將這些權利轉授權給：\n•	其他使用者，讓服務得以按照設計目的運作，例如讓您能與您選擇的對象共享相片\n•	與盛雲電商簽訂合約 (合約內容須符合本條款規定) 的承包商，惟轉授權的目的必須為下方目的一節中所述的少數幾種目的\n\n目的\n本授權僅適用於下列少數幾種目的：\n•	維持服務運作並提升服務品質，也就是讓服務按照設計目的運作以及開發新功能。這包括使用自動化系統和演算法來分析您的內容：\n•	確認是否含有垃圾內容、惡意軟體和非法內容\n•	辨識資料中的模式，例如判斷何時要提醒您睡眠品質建議改善\n•	為您打造個人化的服務，例如提供建議與個人化的內容和廣告\n\n當您使用我們的系統傳送、接收及儲存內容時，系統就會進行分析。\n•	使用您公開分享的內容來推廣服務。舉例來說，我們可能會引用您撰寫的評論，推廣某個盛雲電商應用程式。\n•	開發新的技術和服務，確保盛雲電商遵循本條款\n\n存續時間\n只要您的內容受到權利保護，本授權便持續具有效力。\n如果您將本授權涵蓋的任何內容從盛雲電商的服務中移除，我們的系統將在合理時間內停止公開這些內容，但有兩種例外情況：\n•	您在移除內容前已與其他人分享內容。\n•	您是透過其他公司的服務發布內容。\n\n使用盛雲電商服務\n您的盛雲電商帳戶\n為了方便起見，如果您符合這些年齡規定，可以建立盛雲電商帳戶。您必須擁有盛雲電商帳戶才能使用某些服務。舉例來說，您必須擁有盛雲電商帳戶，才能使用數體健服務存取健康資料。\n您必須為自己的盛雲電商帳戶使用方式負責，包括採取合理步驟保護您的盛雲電商帳戶；我們建議您定期使用安全設定檢查確保帳戶安全。\n\n代表特定機構或商家使用盛雲電商服務\n從商家企業到非營利組織，許多機構皆採用盛雲電商服務。如要代表特定機構使用盛雲電商服務，相關規定如下：\n•	該機構的授權代表必須同意本條款。\n•	貴機構的系統管理員可為您指派一個盛雲電商帳戶。該管理員可能會要求您遵守額外規則，甚至有權存取或停用您的盛雲電商帳戶。\n\n與服務相關的通訊內容\n為了向您提供服務，我們有時會傳送服務公告和其他資訊給您。想進一步瞭解我們與您通訊的方式，請參閱《隱私權政策》。\n如果您選擇向盛雲電商提供意見 (例如改善服務的建議)，我們可根據您的意見採取行動，但對您不負有任何義務。\n\n盛雲電商服務中的內容\n您的內容\n您可以透過盛雲電商的某些服務公開提供您的內容\n•	請參閱您內容的使用權限一節，進一步瞭解您對您的內容具有哪些權利，以及盛雲電商服務如何使用您的內容\n•	請參閱移除您的內容一節，瞭解我們將使用者自製內容從服務中移除的可能原因及方式\n如果您認為有人侵害您的智慧財產權，可以傳送侵權通知給盛雲電商，我們將採取適當行動。\n\n盛雲電商提供的內容\n我們的某些服務含有隸屬於盛雲電商的內容；比方說，您在數體健中看到的許多視覺插圖大多為盛雲電商所有。您可以在本條款及任何服務專屬附加條款的許可範圍內使用盛雲電商的內容，但盛雲電商保有這些內容的智慧財產權。請勿移除、遮蓋或變造盛雲電商的品牌特徵、標誌或法律聲明。\n其他內容\n最後，盛雲電商的某些服務可讓您存取隸屬於其他使用者或機構的內容。除非法律允許，否則您必須取得內容擁有者或機構的許可，才能使用相關內容。其他人或機構在其內容中表達的觀點純屬個人或該機構的意見，並不當然代表盛雲電商的立場。\n\n盛雲電商服務中的軟體\n盛雲電商的某些服務包含可下載的軟體。我們授權您在使用相關服務時取用這類軟體。\n我們授與您使用我們服務之授權如下：\n•	全球性，表示本授權在全球各地皆有效\n•	非專屬性，表示我們可授權軟體予其他人\n•	免權利金，表示無須為本授權支付任何金錢費用\n•	供個人使用，表示本授權效力不及於其他人\n•	不可轉讓，表示您不得將本授權轉讓給他人\n盛雲電商的某些服務包含軟體，這類軟體是依據我們列載的開放原始碼授權條款提供給您使用。有時開放原始碼授權中的條文效力明確高於本條款的部分條文，因此請務必詳閱相關授權內容。\n您不得複製、修改、散布、銷售或出租盛雲電商服務或軟體的任何部分。\n\n發生問題或意見不合時\n依據法律和本條款，您有權 (1) 享有特定服務品質，以及 (2) 在發生問題時取得修正問題的方法。\n\n擔保\n我們會以合理的技術和謹慎態度提供服務。如果我們提供的品質未達本擔保內容所述等級，您同意將這個情況告知我們，我們將與您一同解決這個問題。\n\n免責聲明\n我們對服務 (包括服務中的內容、服務的特定功能，或是服務的穩定性、供應情形或服務是否符合您的需求) 唯一做出的承諾，是界定於以下條款內容或法規中：(1) 擔保一節；(2) 服務專屬附加條款；(3) 不受本條款限制的法律。\n針對您在使用我們的服務時提供的各種資料，我們提供儲存服務，但不負保管責任，若有任何因素導致資料(無論是您或我們操作導致)毀損或遺失，我們將盡最大努力協助恢復，若無法完全恢復或重建，則您不得就此提出爭議或訴訟。\n\n法律責任\n適用於所有使用者\n無論在法律或本條款的規範之下，這些條文的目的都是在雙邊之間求取平衡，以便在發生問題時讓您或盛雲電商可向對方提出請求。因此，我們可依法按照本條款限制特定責任，但不包括其他責任。\n本條款僅在適用法律許可範圍內限制盛雲電商的責任。 本條款並未限制 盛雲電商和使用者對於以下各種情況的法律責任：詐欺、詐欺性不實陳述或行為，或者因過失或故意的不當行為而造成的死亡或人身傷害。\n除了上述責任之外，盛雲電商僅承擔因自己違反本條款或適用服務專屬附加條款的責任，但仍受適用法律的約束。\n\n僅適用於商業使用者和機構\n如果您是商業使用者或機構：\n•	在適用法律許可的範圍內，您必須就因您以違法方式使用服務，或是違反本條款或服務專屬附加條款所產生或與之相關的任何第三方法律訴訟 (包括政府機關所採取的動作)，向盛雲電商及其董事、主管人員、員工和承包商做出賠償。賠償範圍涵蓋因請求、損失、損害、判決、罰款、訴訟費用和法律費用而引起的任何法律責任或費用。\n•	如果您依法免負包括賠償在內的特定責任，則依據本條款規定，您無須負擔這些責任。\n•	盛雲電商不承擔以下責任：\n•	利潤、收益、商機、商譽或預期節省金額方面的損失\n•	間接或衍生性損失\n•	懲罰性損害賠償\n•	盛雲電商因本條款所產生或與之相關的賠償總額上限為 (1)新台幣5,000元或 (2) 發生違規情事前 12 個月內，您使用相關服務時所支付金額，兩者以較高者為準\n\n在發生問題時採取行動\n採取下方所述的行動之前，我們將在合理可行的情況下提前通知您，藉此向您說明我們採取相關行動的原因，並讓您有機會解決問題，除非我們合理相信這麼做將導致下列情況：\n•	對使用者、第三方或盛雲電商造成傷害或損害，或必須因此負起相關責任\n•	違反法律或執法機關命令\n•	對調查有不良影響\n•	對各項盛雲電商服務的運作、完整性或安全有不良影響\n\n移除您的內容\n如果我們合理確信您的任何內容符合以下條件，將保留依適用法律移除部分或所有內容的權利：(1) 違反本條款、服務專屬附加條款或政策；(2) 違反適用法律；或 (3) 可能對其他使用者、第三方或盛雲電商造成傷害。包含但不限於侵犯他人智慧財產權的內容。\n\n將您的盛雲電商服務存取權停權或終止\n盛雲電商保留權利，可於發生下列任一情況時暫停或終止您的盛雲電商服務存取權，或是刪除您的盛雲電商帳戶：\n•	您違反本條款、服務專屬附加條款或多項政策\n•	法律或法院命令規定我們這麼做\n•	我們合理確信您的行為 (例如入侵、網路詐騙、騷擾、濫發垃圾內容、誤導他人或剪輯非您擁有的內容) 對使用者、第三方或盛雲電商造成傷害，或必須因此負起相關責任\n如果您認為自己的盛雲電商帳戶誤遭停權或終止，可以提出申訴。\n當然，您隨時可以停止使用我們的服務。如果您決定停止使用特定服務，歡迎您說明原因，以便我們持續改善服務品質。\n\n紛爭解決、準據法和法院\n如需盛雲電商的聯絡資訊，請造訪我們的聯絡網頁。\n因本條款、服務專屬附加條款或相關服務所產生或與之相關的任何爭議，將受中華民國法律規範，這些爭議將以台灣桃園地方法院為第一審管轄法院，您與盛雲電商皆同意受上述法院之管轄。\n\n關於本條款\n依法律規定，如您擁有不受這些服務條款的合約所限制的特定權利。本條款絕不會以任何方式限制這類權利。\n本條款說明了您與盛雲電商之間的關係。即使其他人或機構可依據本條款受惠於該關係，但這並不會賦予他們任何法定權利。\n我們希望讓這些條款內容更加淺顯易懂，因此採用盛雲電商服務中的例子進行說明。不過，文中提及的某些服務可能並未在您的國家/地區推出。\n如果本條款與服務專屬附加條款有所牴觸，該服務適用的規定將以附加條款為準。\n如果特定條款無效或無法執行，並不會影響任何其他條款。\n如果您不遵守本條款或服務專屬附加條款，而我們未立即採取行動，這並不表示我們要放棄任何既有的權利，例如日後再採取行動的權利。\n我們可能會基於以下原因更新本條款及服務專屬附加條款：(1) 反映我們提供服務或業務處理方式中的異動，例如新增服務、功能、技術、定價或福利 (或是移除舊有項目) 的情況；(2) 配合法律、法規或安全考量；或是 (3) 防止濫用情形或損害。\n如果我們更新本條款或服務專屬附加條款，我們會提前合理通知您 (透過電子郵件或其他適當方式)，讓您有機會審視及接受重大變更，但下列情況除外：(1) 相關變更涉及新推出的產品功能或服務，或者 (2) 相關變更是為了因應緊急狀況，例如防止現行濫用行為或配合法律要求。如果您不同意新條款內容，請移除您的內容，並停止使用相關服務。您也可以隨時關閉自己的盛雲電商帳戶，藉此終止您與盛雲電商的關係。\n
+\n盛雲電商 隱私權政策\n版本日期：2022年06月07日\n\n盛雲電商收集的資訊\n我們希望您瞭解盛雲電商在您使用盛雲電商服務時收集的資訊類型\n我們收集資訊是為了向所有使用者提供更優質的服務；這些資訊可協助我們判斷基本設定 (例如您使用的語言)，甚至分析較複雜的內容 (例如對您最實用的廣告)。盛雲電商收集的資訊類型及這些資訊的用途取決於您使用盛雲電商服務的方式，以及您的隱私權設定。\n如果您未登入盛雲電商帳戶，我們會運用您使用的瀏覽器、應用程式或裝置所連結的唯一識別碼來儲存我們所蒐集的資訊。這樣一來，我們就能在所有瀏覽工作階段中保留您的偏好設定，例如偏好語言，或者是否要根據您的活動顯示更相關的搜尋結果或廣告。\n如果您登入了盛雲電商帳戶，我們會另外收集盛雲電商帳戶中儲存的資訊，並將它們視作個人資訊處理。\n\n您建立或提供給我們的內容\n當您建立盛雲電商帳戶時，系統會要求您提供個人資訊，包括您的姓名和密碼。即使您未登入盛雲電商帳戶，還是可以向我們提供某些資訊，例如要用來接收服務更新通知的電子郵件地址。\n我們也會收集您在使用盛雲電商服務時建立、上傳，或從其他人處收到的內容。\n\n我們在您使用盛雲電商服務時收集的資訊類型\n您的應用程式、瀏覽器和裝置\n \n我們會收集您用來存取盛雲電商服務的應用程式、瀏覽器和裝置相關資訊，這有助於我們提供特定功能，例如自動更新產品以及在電量不足時調暗螢幕。\n我們收集的資訊包括唯一識別碼、瀏覽器類型和設定、裝置類型和設定、作業系統、行動網路資訊 (包括電信業者名稱和電話號碼)，以及應用程式版本編號。此外，我們也會針對您的應用程式、瀏覽器和裝置與盛雲電商服務的互動收集相關資訊，包括 IP 位址、當機報告、系統活動，以及您提出要求的日期、時間和參照網址。\n如果您裝置上的盛雲電商服務與我們的伺服器連線，我們便會蒐集這類資訊。\n\n您的活動\n我們會收集您使用盛雲電商服務時進行的活動相關資訊，以便向您推薦您可能會喜歡的保健食品或提供類似功能。我們收集的活動資訊可能包括：\n•	您的量測資料\n•	內容和廣告的瀏覽次數與互動次數\n•	交易活動\n•	您交流或分享內容的對象\n•	在採用盛雲電商服務的第三方網站和應用程式中的活動\n\n您的位置資訊\n我們可能會在您使用盛雲電商服務時蒐集您的位置資訊，以便附近事物的推薦，以及根據您的大概位置顯示廣告。\n我們可根據下列項目判斷您的位置，準確度會依情況而異：\n•	GPS 和您裝置上的其他感應器資料\n•	IP 位址\n•	在盛雲電商服務上的活動資訊，例如您的預約服務\n•	您裝置附近事物的相關資訊，例如 Wi-Fi 存取點、基地台和啟用藍牙功能的裝置。\n我們也可能會透過信任的合作夥伴蒐集您的相關資訊，這些合作夥伴包括：提供商家資訊在各項盛雲電商服務中顯示的目錄服務夥伴、提供盛雲電商商用服務潛在客戶資訊的行銷合作夥伴，以及提供防止濫用資訊的安全防護合作夥伴。此外，我們也會收到廣告合作夥伴提供的資訊，以便代替廣告合作夥伴提供廣告和研究服務。\n我們運用多種技術來收集及儲存資訊，包括 Cookie、像素廣告代碼、本機存放區 (例如瀏覽器網路存放區或應用程式資料快取)、資料庫和伺服器紀錄。\n\n盛雲電商收集資料的原因\n我們運用收集到的資料改善服務\n我們從各項盛雲電商服務收集到的資訊會用於下列用途：\n\n提供盛雲電商服務\n我們會使用您的資訊來提供盛雲電商服務。\n\n維護及改善盛雲電商服務\n我們也會使用您的資訊來確保盛雲電商服務正常運作，例如追蹤服務中斷事件或解決您回報的問題。此外，我們還會使用您的資訊來改善盛雲電商服務。\n\n開發新服務\n我們會將從現有盛雲電商服務收集到的資訊用於開發新服務。\n\n\n提供個人化的服務，包括內容和廣告\n我們會使用收集到的資訊來為您打造個人化的服務，包括提供建議和個人化內容。\n視您的設定而定，我們可能會根據您的興趣向您顯示個人化廣告。\n•	我們不會向您顯示任何針對敏感類別 (例如種族、宗教、性傾向或健康狀況等類別) 打造的個人化廣告。\n•	我們不會與廣告客戶分享您的個人識別資訊 (例如您的姓名或電子郵件)，但您主動要求分享時除外。舉例來說，如果您看到附近花店的廣告並選取 [輕觸通話] 按鈕，我們會為您接通電話，也會將您的電話號碼提供給花店。\n\n評估成效\n我們會對資料進行分析和評估，以瞭解盛雲電商服務的使用情形。比方說，我們會分析您在盛雲電商提供之服務的造訪資料，分析結果可用於改善產品設計等用途。此外，我們也會使用您進行互動的廣告相關資料，協助廣告客戶掌握廣告活動成效。我們會運用多種工具進行分析和評估。\n\n與您交流互動\n我們會使用收集到的資訊 (例如您的電子郵件地址) 直接與您互動。例如，如果我們偵測到可疑活動 (如有人試圖從不尋常的位置登入您的盛雲電商帳戶)，我們可能但不保證會通知您。此外，我們也可能會針對盛雲電商服務的近期異動或改善寄送通知給您。如果您與盛雲電商聯絡，我們會記錄您的要求，以助您解決任何可能遇到的問題。\n\n保護盛雲電商、盛雲電商服務使用者和一般大眾\n我們會運用相關資訊來改善盛雲電商服務的安全性和穩定性。這包括偵測及預防任何可能會對盛雲電商、盛雲電商使用者或一般大眾造成傷害的詐欺事件、濫用行為、安全性風險和技術問題，並且做出應變。\n\n\n為了達成上述目標，我們採用多種不同的資訊處理技術。首先，我們使用自動化系統來分析您的內容，以便為您提供個人化廣告，或是其他根據您的盛雲電商服務使用方式量身打造的功能。我們也對您的內容進行分析，這有助於我們偵測濫用情形，例如垃圾內容、惡意軟體和違法內容。我們還使用演算法來找出資料中的特定模式。\n我們可整合從各項盛雲電商服務和您的各個裝置收集到的資訊，以便達成上述目標。\n如果其他使用者已經握有您的電子郵件地址或其他個人識別資訊，我們會向他們顯示您的公開盛雲電商帳戶資訊 (例如您的姓名和相片)。\n如果我們需要將您的資訊用於本《隱私權政策》未載明的其他目標，將事先徵求您的同意。\n\n刪除您的資訊\n您可以根據適用法律，要求盛雲電商將內容從特定服務中移除。\n如要刪除您的資訊，您可以：\n•	將您的內容從特定盛雲電商服務中刪除\n•	刪除特定盛雲電商產品，包括與這些產品相關的資訊\n•	刪除整個盛雲電商帳戶\n\n\n分享您的資訊\n當資訊是由您主動分享\n我們有許多服務可讓您與其他人分享資訊，分享方式也是由您決定。\n\n當資訊是由盛雲電商分享\n除非符合下列其中一種情況，否則我們不會與盛雲電商以外的公司、機構或個人分享您的個人資訊：\n\n事先徵得您的同意\n我們在事先徵得您同意的情況下，可與盛雲電商以外的對象分享您的個人資訊。舉例來說，當您透過健康配進行產品訂購，我們會將您的姓名或電話號碼提供給商品供應商。\n\n供外部處理\n我們會將個人資訊提供給盛雲電商的關係企業和盛雲電商信任的其他企業或人員進行處理，處理過程必須遵從我們的指示，也必須遵守本《隱私權政策》和任何其他適當的保密和安全措施。\n\n基於法律原因\n如果我們確信，基於下列目的存取、使用、保留或揭露個人資訊屬合理必要的行為，我們會將個人資訊提供給盛雲電商以外的第三方：\n•	配合任何適用法律、法規、法律令狀或合法的政府請求。\n•	執行適用的《服務條款》，包括調查可能的違規情事。\n•	偵測、預防或是處理詐欺、安全性或技術問題。\n•	依法律規定或在合法範圍內，為盛雲電商、盛雲電商使用者或一般大眾提供保護，使其權利、財產或安全不致遭受損害。\n\n我們可公開不含身分識別內容的資訊，或是將這類資訊提供給合作夥伴 (例如發佈商、廣告客戶、開發人員或權利所有人)。舉例來說，我們會藉由公開資訊，讓外界瞭解盛雲電商服務的一般使用趨勢。我們也允許特定合作夥伴使用自己的 Cookie 或類似技術，從您的瀏覽器或裝置收集資訊，以便放送廣告及評估各項數據。\n如果盛雲電商涉及合併、收購事宜或出售資產，我們會繼續維護您個人資訊的機密性，並於個人資訊移轉或成為其他隱私權政策的涵蓋目標前，先行通知受影響的使用者。\n\n\n保留您的資訊\n我們收集的資料有不同的保留期限，取決於資料的內容、使用方式和您的設定：\n•	您可隨時刪除特定資料，例如由您建立或上傳的內容。您也可以刪除帳戶中儲存的活動資訊，或是設定在特定時間後自動刪除該資訊。\n•	其他資料 (例如伺服器記錄中的廣告資料) 在經過特定時間後會遭到系統自動刪除或匿名處理。\n•	有些資料會保留到您刪除自己的盛雲電商帳戶為止。 \n•	有些資料則會依正當業務需求或法律需求 (例如加強安全性、防範詐騙和濫用行為或保存財務記錄) 延長保留期限。\n當您刪除資料時，我們會遵循刪除程序，確實將您的資料從盛雲電商伺服器中安全且完整地移除，或是僅保留匿名處理後的資料。我們致力確保盛雲電商服務提供妥善保護，防止您的資訊遭到誤刪或惡意刪除。因此，當您刪除某些資訊時，我們的現行和備份系統可能仍會將該資訊的副本保留一段時間才刪除。\n\n遵循法律並與主管機關合作\n資料移轉\n我們的服務伺服器可能遍布全球各地，因此您的資訊可能會由您所在國家/地區外的伺服器處理。每個國家/地區各有不同的資料保護法，保護的完善與嚴密程度也各不相同。無論我們是在哪裡處理您的資訊，一律會採用本政策中載明的保護措施。我們也會遵守與資料移轉相關的特定法律架構。\n我們收到正式的書面申訴後，將與申訴人聯絡。我們會與適當的主管機關 (包括當地的資料保護主管機關) 合作，解決任何與您的資料移轉有關且無法由我們直接與您解決的申訴。\n\n遵循法律並與主管機關合作\n關於本政策\n本政策的適用範圍\n本《隱私權政策》適用於由盛雲電商及其關係企業提供的服務，以及在第三方網站提供的服務 (例如廣告服務)。然而，本《隱私權政策》不適用於另行訂定隱私權政策且未納入本《隱私權政策》的服務。\n\n本政策的變更\n我們會不時修訂本《隱私權政策》。我們一定會標明最後修訂日期，並保存政策的封存版本供您查閱。如果本《隱私權政策》有重大異動，我們會提供更明顯的通知 (例如某些服務會以電子郵件通知政策異動)。除法律另有規定外，本條款修改後，若您仍繼續使用本服務，即視為同意並接受修改後之內容。\n\n
+
+
+
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    //2021/10/26 Kelly add
+    <string name="login_fail">帳號或密碼錯誤</string>
+    <string name="code_fail">手機號碼錯誤</string>
+    <string name="code_empty">手機號碼不得為空</string>
+    <string name="pwd_fail">密碼不相符</string>
+    <string name="pwd_true">密碼修改成功</string>
+    <string name="member_data_true">資料修改成功</string>
+    <string name="member_data_false">資料修改失敗</string>
+    <string name="member_register_true">註冊成功</string>
+    <string name="member_register_false">註冊失敗</string>
+    <string name="check_fail">請勾選同意聲明</string>
+    <string name="barcode_fail">僅限健康配合作商家收款使用</string>
+    <string name="tab1">全部</string>
+    <string name="tab2">維他命</string>
+    <string name="tab3">葉黃素</string>
+    <string name="commodity_des">棉花糖壓</string>
+    <string name="text_10">生魚片壓~鮪魚壓</string>
+    <string name="tall">熱銷排行榜</string>
+    <string name="t1">全部</string>
+    <string name="t2">維他命</string>
+    <string name="t3">葉黃素</string>
+    <string name="text_11">巴拉巴拉</string>
+    <string name="text_100">50000000</string>
+    <string name="text_1001">美式咖啡</string>
+    <string name="text_1002">Nt$ 30</string>
+    <string name="text_1003">x 1</string>
+    <string name="text_1004">小計$ 30</string>
+    <string name="test_descr">我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述
+    我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述
+        我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述我是敘述
+    </string>
+    <string name="cart_terms">勾選確認代表已詳細閱讀並接受<font color="#6495ED">購物條款</font></string>
+    <string name="pd_back">回上個步驟</string>
+    <string name="pd_pay">繼續結帳</string>
+    <string name="pdData">收件資訊</string>
+    <string name="pd_01"><font color="#FF0000">*</font>配送方式</string>
+    <string name="pd_02">收件人同會員資料</string>
+    <string-array name="pd_001">
+        <!--        <item>-->
+        <!--        到店取貨-->
+        <!--    </item>-->
+        <item>
+       郵寄
+    </item>
+    </string-array>
+    <string name="pd_03"><font color="#FF0000">*</font>收件人姓名</string>
+    <string name="pd_04"><font color="#FF0000">*</font>收件人地址</string>
+    <string name="pd_05"><font color="#FF0000">*</font>手機號碼</string>
+    <string name="pd_06">E-MAIL</string>
+    <string name="pd_07">請輸入收件人的姓名</string>
+    <string name="pd_08">地址</string>
+    <string name="pd_09">請輸入收件人的手機號碼</string>
+    <string name="pd_10">請輸入收件人的E-MAIL</string>
+    <string name="pd_11"><font color="#FF0000">優惠券</font></string>
+    <string name="pd_12">請輸入折扣碼</string>
+    <string name="pd_13"><font color="#FF0000">折扣碼無效，請重新輸入</font></string>
+    <string name="pd_14">紅利點折抵，本單可折抵 $</string>
+    <string name="pd_15"><font color="#FF0000">*</font> 配送開立發票方式</string>
+    <string name="pd_16">商品合計  </string>
+    <string name="pd_17">運費  </string>
+    <string name="pd_18">優惠券折扣  </string>
+    <string name="pd_19">紅利點折扣  </string>
+    <string name="pd_20">應付金額合計  </string>
+    <string name="pd_info_21"><font color="#FF0000">*</font> E-mail</string>
+    <string name="pd_info_22">優惠券</string>
+    <string name="pd_info_23">紅利點折抵，本單可折抵 $</string>
+
+    <string name="pd_money0">＄1,000</string>
+    <string name="pd_money1">-＄0</string>
+    <string-array name="pd_1501"><item>
+        個人電子發票
+    </item>
+        <item>
+       手機載具
+    </item>
+        <item>
+       統一編號電子發票
+    </item>
+    </string-array>
+    <string name="shopping_terms">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus
+    </string>
+    <string name="title_shop_terms">購物條款</string>
+    <string name="title_commodity">商品</string>
+    <string name="title_shopcart">購物車</string>
+    <string name="title_pay_data">填寫付款資料</string>
+    <string name="pd_21">發票資料</string>
+    <string name="pd_22">響應電子化發票，發票將寄送至您的E-MAIL。提醒您，發票一旦開立，不得任意更改或改開發票。
+</string>
+    <string name="pd_23">載具號碼</string>
+    <string name="pd_24">說明綁定後，即可自動將發票存入財政部手機條碼。如因輸入資料錯誤所致損害，本公司恕不負責。</string>
+    <string name="pd_25"> 公司行號抬頭</string>
+    <string name="pd_26">   統一編號</string>
+    <string name="pd_2501">   請輸入公司行號抬頭</string>
+    <string name="pd_2601">   請輸入統一編號</string>
+    <string name="mo_id">訂單編號:</string>
+    <string name="mo_date">訂單日期:</string>
+    <string name="mo_dollar">訂單金額:</string>
+    <string name="mo_status">訂單狀態:</string>
+    <string name="pay_status">付款狀態:</string>
+    <string name="delieve">配送方式:</string>
+    <string name="mo_pay">立即付款</string>
+    <string name="mo_view">查看詳情</string>
+    <string name="account_listitem_order">健康商城訂單</string>
+    <string name="text_status">處理中</string>
+    <string name="title_myorder">我的訂單</string>
+    <string name="title_is">使用者消費權益ＱＡ</string>
+
+
+    <string-array name="city">
+        <item>基隆市 </item>
+        <item>
+    嘉義市 </item>
+        <item>
+    台北市 </item>
+        <item>
+    嘉義縣 </item>
+        <item>
+    新北市</item>
+        <item>
+    台南市</item>
+        <item>
+    桃園縣</item>
+        <item>
+    高雄市</item>
+        <item>
+    新竹市</item>
+        <item>
+    屏東縣</item>
+        <item>
+    新竹縣</item>
+        <item>
+    台東縣</item>
+        <item>
+    苗栗縣</item>
+        <item>
+    花蓮縣</item>
+        <item>
+    台中市</item>
+        <item>
+    宜蘭縣</item>
+        <item>
+    彰化縣</item>
+        <item>
+    澎湖縣</item>
+        <item>
+    南投縣</item>
+        <item>
+    金門縣</item>
+        <item>
+    雲林縣</item>
+        <item>
+    連江縣</item>
+    </string-array>
+</resources>

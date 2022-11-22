@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Fragment_Account"
+    tools:context=".ui.account.AccountMainFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toTopOf="@+id/bn_logout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_avator"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#FAFAFA">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_user"
+                    android:layout_width="@dimen/account_main_user_photo_height"
+                    android:layout_height="@dimen/account_main_user_photo_width"
+                    android:layout_centerInParent="true"
+                    app:cardCornerRadius="@dimen/account_main_user_photo_corner_radius"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:id="@+id/iv_head"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/banner_hpay" />
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_edit_2"
+                    app:layout_constraintBottom_toBottomOf="@+id/cv_user"
+                    app:layout_constraintEnd_toEndOf="@+id/cv_user" />
+
+                <TextView
+                    android:id="@+id/txt_memberName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/account_main_username_top_margin"
+                    android:text="王小八"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/account_main_username_textsize"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cv_user" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- 健康Point點數 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_point_info"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:visibility="invisible">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_point_center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <TextView
+                    android:id="@+id/tv_point_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/account_listitem_point"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/home_points_textsize"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_point_center"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:scaleType="center"
+                    android:src="@drawable/icon_point001"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/guideline_point_center"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_point_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="100"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/home_points_textsize"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_point"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!-- 選項清單 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_list1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/item_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/item_record"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        style="@style/AccountMainListItemTextView"
+                        android:text="@string/account_listitem_data" />
+
+                    <ImageView
+                        style="@style/AccountMainListItemImageView"
+                        app:srcCompat="@drawable/icon_next" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/gray_e0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/item_point"
+                    app:layout_constraintTop_toBottomOf="@+id/item_account">
+
+                    <TextView
+                        style="@style/AccountMainListItemTextView"
+                        android:text="@string/account_listitem_record" />
+
+                    <ImageView
+                        style="@style/AccountMainListItemImageView"
+                        app:srcCompat="@drawable/icon_next" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/gray_e0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toTopOf="@+id/item_rule"
+                    app:layout_constraintTop_toBottomOf="@+id/item_record">
+
+                    <TextView
+                        style="@style/AccountMainListItemTextView"
+                        android:text="@string/account_listitem_point" />
+
+                    <ImageView
+                        style="@style/AccountMainListItemImageView"
+                        app:srcCompat="@drawable/icon_next" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/gray_e0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_rule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/item_recommend"
+                    app:layout_constraintTop_toBottomOf="@+id/item_point">
+
+                    <TextView
+                        style="@style/AccountMainListItemTextView"
+                        android:text="@string/account_listitem_rule" />
+
+                    <ImageView
+                        style="@style/AccountMainListItemImageView"
+                        app:srcCompat="@drawable/icon_next" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/gray_e0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toTopOf="@+id/item_coupon"
+                    app:layout_constraintTop_toBottomOf="@+id/item_rule">
+
+                    <TextView
+                        style="@style/AccountMainListItemTextView"
+                        android:text="@string/recommend_code" />
+
+                    <ImageView
+                        style="@style/AccountMainListItemImageView"
+                        app:srcCompat="@drawable/icon_next" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/gray_e0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_coupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toTopOf="@+id/item_qa"
+                    app:layout_constraintTop_toBottomOf="@+id/item_recommend">
+
+                    <TextView
+                        style="@style/AccountMainListItemTextView"
+                        android:text="@string/recommend_coupon" />
+
+                    <ImageView
+                        style="@style/AccountMainListItemImageView"
+                        app:srcCompat="@drawable/icon_next" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/gray_e0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_qa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/item_coupon">
+
+                    <TextView
+                        style="@style/AccountMainListItemTextView"
+                        android:text="@string/account_listitem_qa" />
+
+                    <ImageView
+                        style="@style/AccountMainListItemImageView"
+                        app:srcCompat="@drawable/icon_next" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/gray_e0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_member_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/item_qa">
+
+                    <TextView
+                        style="@style/AccountMainListItemTextView"
+                        android:text="@string/account_listitem_member_delete" />
+
+                    <ImageView
+                        style="@style/AccountMainListItemImageView"
+                        app:srcCompat="@drawable/icon_next" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/gray_e0" />
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/account_main_logout_top_margin"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView">
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/AccountMainListItemTextView"
+            android:text="@string/logout"
+            android:textColor="@color/cadetblue" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            style="@style/AccountMainListItemImageView"
+            app:srcCompat="@drawable/icon_next"
+            app:tint="@color/cadetblue" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Fragment_Account"
+    tools:context=".ui.account.AccountRuleFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 畫面上方訊息 -->
+        <LinearLayout
+            android:id="@+id/layout_recommend_info"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:background="@drawable/rectangle_outline_dap_gray80"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/recommend_info_internal_offset"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/recommend_info1_textsize"
+                android:text="@string/recommend_info1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/recommend_info2_textsize"
+                android:text="@string/recommend_info2"/>
+        </LinearLayout>
+
+        <!-- 推薦條款與細則說明 -->
+        <TextView
+            android:id="@+id/tv_recomment_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/recommend_rule_top_margin"
+            android:gravity="start"
+            android:textSize="@dimen/recommend_rule_textsize"
+            android:textColor="@color/txtcolor"
+            android:text="@string/recommend_rule"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_recommend_info"/>
+
+        <!-- 你的推薦碼 -->
+        <TextView
+            android:id="@+id/tv_your_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/recommend_your_code_top_margin"
+            android:gravity="start"
+            android:textSize="@dimen/recommend_your_code_textsize"
+            android:textColor="@color/darktxtcolor"
+            android:text="@string/your_recommend_code"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_recomment_rule"/>
+
+        <!-- 推薦碼 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_recommend_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recommend_code_height"
+            android:layout_marginTop="@dimen/recommend_code_top_margin"
+            android:background="@drawable/button_backgroung_normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_your_code"
+            >
+            <TextView
+                android:id="@+id/tv_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_80"
+                android:textSize="@dimen/recommend_code_textsize"
+                android:text="AB9800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+            <TextView
+                android:id="@+id/tv_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/recommend_code_copy_end_margin"
+                android:textColor="@color/red"
+                android:textSize="@dimen/recommend_code_textsize"
+                android:text="@string/copy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- 邀請朋友 -->
+        <TextView
+            android:id="@+id/tv_invite_friend"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recommend_invite_height"
+            android:layout_marginTop="@dimen/recommend_invite_top_margin"
+            android:gravity="center"
+            android:background="@drawable/recommend_button_green_gradient"
+            android:textSize="@dimen/recommend_invite_textsize"
+            android:textColor="@color/gray_f0"
+            android:text="@string/invite_friend"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_recommend_code"
+
+            />
+
+        <!-- 成功邀請記錄 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_recommend_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/recommend_invite_list_top_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_invite_friend"
+            >
+            <TextView
+                android:id="@+id/tv_friend_label"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/recommend_code_height"
+                android:gravity="center"
+                android:background="@drawable/button_backgroung_normal"
+                android:textColor="@color/gray_80"
+                android:textSize="@dimen/recommend_code_textsize"
+                android:text="@string/invited_friends_list"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <!-- 成功邀請朋友 -->
+            <TextView
+                android:id="@+id/tv_friend_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/recommend_invite_height"
+                android:layout_marginTop="@dimen/recommend_invite_top_margin"
+                android:gravity="center"
+                android:background="@drawable/recommend_button_green_gradient"
+                android:textSize="@dimen/recommend_invite_textsize"
+                android:textColor="@color/gray_f0"
+                android:text="@string/invite_friend"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_friend_label"
+
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

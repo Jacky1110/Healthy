@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textView15"
+                style="@style/tvMemberList"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="@string/mo_id"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView151"
+                style="@style/tvMemberList"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="@string/mo_date"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textView15"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView152"
+                style="@style/tvMemberList"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="@string/mo_dollar"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textView151"
+                app:layout_constraintTop_toBottomOf="@+id/textView151" />
+
+            <TextView
+                android:id="@+id/textView153"
+                style="@style/tvMemberList"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="@string/mo_status"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textView152"
+                app:layout_constraintTop_toBottomOf="@+id/textView152" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/textView153"
+                app:layout_constraintEnd_toStartOf="@+id/moPay"
+                app:layout_constraintStart_toEndOf="@+id/textView15"
+                app:layout_constraintTop_toTopOf="@+id/textView15">
+
+                <TextView
+                    android:id="@+id/moId"
+                    style="@style/tvMemberList"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="202105260099" />
+
+                <TextView
+                    android:id="@+id/moDate"
+                    style="@style/tvMemberList"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="2021-05-26 10:10" />
+
+                <TextView
+                    android:id="@+id/moDollar"
+                    style="@style/tvMemberList"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="1000" />
+
+                <TextView
+                    android:id="@+id/moStatus"
+                    style="@style/tvMemberList"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="處理中" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/moView"
+                android:layout_width="60dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:alpha="0.8"
+                android:background="@drawable/button_rectangle_green"
+                android:text="@string/mo_view"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView152"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView151" />
+
+            <Button
+                android:id="@+id/moPay"
+                android:layout_width="60dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:alpha="0.8"
+                android:background="@drawable/button_rectangle_green"
+                android:backgroundTint="@color/circle_white"
+                android:text="@string/mo_pay"
+                android:textColor="@color/cadetblue"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView151"
+                app:layout_constraintStart_toStartOf="@+id/moView"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

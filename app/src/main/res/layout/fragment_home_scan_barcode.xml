@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Fragment_Account"
+    android:background="@android:color/transparent"
+    tools:context=".ui.home.HomeMainFragment">
+
+    <com.jotangi.healthy.ui.customview.AutoFitTextureView
+        android:id="@+id/texture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vw_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_v1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.2" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_v2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.8" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_h1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.2" />
+        <View
+            android:id="@+id/vw_top_mask"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#C0808080"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/vw_hole"/>
+        <View
+            android:id="@+id/vw_hole"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="@+id/gl_v1"
+            app:layout_constraintEnd_toEndOf="@+id/gl_v2"
+            app:layout_constraintTop_toBottomOf="@+id/gl_h1"/>
+        <View
+            android:id="@+id/vw_bottom_mask"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#C0808080"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vw_hole"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <View
+            android:id="@+id/vw_start_mask"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#C0808080"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/gl_v1"
+            app:layout_constraintTop_toTopOf="@+id/vw_hole"
+            app:layout_constraintBottom_toBottomOf="@+id/vw_hole"/>
+        <View
+            android:id="@+id/vw_end_mask"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#C0808080"
+            app:layout_constraintStart_toStartOf="@+id/gl_v2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/vw_hole"
+            app:layout_constraintBottom_toBottomOf="@+id/vw_hole"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/scan_barcode_note_vertical_margin"
+            android:textColor="@color/gray_f0"
+            android:textSize="@dimen/scan_barcode_note_textsize"
+            android:text="@string/scan_note"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vw_hole"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

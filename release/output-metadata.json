@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.jotangi.healthy",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 13,
+      "versionName": "0.40.0326V",
+      "outputFile": "hpay_release_0.40.0326V.apk"
+    }
+  ]
+}
