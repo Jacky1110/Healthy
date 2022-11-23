@@ -433,6 +433,7 @@ public class MainActivity extends AppCompatActivity implements MyBaseFragment.Fr
     private void showPopDialog() {
         new AlertDialog.Builder(this)
                 .setTitle("提醒")
+                .setCancelable(false)
                 .setMessage("偵測到有新版本！未更新將無法繼續使用並會結束本 App！")
                 .setPositiveButton(
                         "結束 App",

@@ -8,7 +8,7 @@ android {
     signingConfigs {
         debug {
 //            storeFile file('/Users/dinghan/Downloads/Healthy_/keystore/health.jks')
-            storeFile file('/Users/jtg_harley/Project/2022_0607_健康配/99. Source Code/Healthy_/keystore/health.jks')
+            storeFile file('/Users/jtg_harley/Project/2022_0607_健康配/99. Source Code/Healthy/keystore/health.jks')
             storePassword '123456'
             keyPassword '123456'
             keyAlias 'key0'
@@ -25,8 +25,8 @@ android {
         applicationId "com.jotangi.healthy"
         minSdkVersion 28
         targetSdkVersion 31
-        versionCode 28
-        versionName "0.52"
+        versionCode 30
+        versionName "1.16"
         signingConfig signingConfigs.debug
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
