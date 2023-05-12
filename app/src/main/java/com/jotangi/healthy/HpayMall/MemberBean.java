@@ -34,6 +34,8 @@ public class MemberBean {
 
     public static String payment_url;
 
+    public static String payUrl;
+
     public static String barcode;
     public static String barcode_id;
     public static boolean btnCart=false;

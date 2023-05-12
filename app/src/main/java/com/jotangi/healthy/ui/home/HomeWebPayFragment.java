@@ -20,6 +20,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import androidx.annotation.NonNull;
+import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.jotangi.healthy.HpayMall.ApiUrl;
@@ -64,19 +65,44 @@ public class HomeWebPayFragment extends ProjConstraintFragment {
         webView = rootView.findViewById(R.id.webview);
         if (MemberBean.payment_url != null) {
             loadWebView();
+            Log.d(TAG, "aaaaaa: " + "bbbbbbb");
         } else {
+//            loadWebViewOut();
             getpaymenturl();
+            Log.d(TAG, "aaaaaa: " + "aaaaaa");
         }
 
 
     }
 
+    private void loadWebViewOut() {
+
+    }
+
     private void loadWebView() {
-        String WEB_SCAN_TO_PAY_URL = MemberBean.payment_url + "?sid=" + MemberBean.barcode_id + "&mid=" + MemberBean.mid;
-        initWebview();
-        webView.loadUrl(WEB_SCAN_TO_PAY_URL);
-        MemberBean.channel_id = 3;
-        Log.d(TAG, "WEB?????" + WEB_SCAN_TO_PAY_URL);
+        if (MemberBean.payUrl.equals("https://pay.digimed.tw/medicalec/app-stores.php?")) {
+
+            String WEB_SCAN_TO_PAY_URL = MemberBean.payment_url + "?sid=" + MemberBean.barcode_id + "&mid=" + MemberBean.mid;
+            initWebview();
+            webView.loadUrl(WEB_SCAN_TO_PAY_URL);
+            MemberBean.channel_id = 3;
+            Log.d(TAG, "payment_url: " + MemberBean.payment_url);
+            Log.d(TAG, "payUrl: " + MemberBean.payUrl);
+            Log.d(TAG, "WEB?????" + WEB_SCAN_TO_PAY_URL);
+
+        } else if (MemberBean.payUrl.equals("https://pay.digimed.tw/sy/payindex.php?")) {
+            String WEB_SCAN_TO_PAY_URL = MemberBean.payUrl + "sid=" + MemberBean.barcode_id;
+            initWebview();
+//            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(WEB_SCAN_TO_PAY_URL));
+//            browserIntent.addFlags(Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
+//            startActivity(browserIntent);
+            CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+            CustomTabsIntent customTabsIntent = builder.build();
+            customTabsIntent.launchUrl(requireContext(), Uri.parse(WEB_SCAN_TO_PAY_URL));
+//            webView.loadUrl(WEB_SCAN_TO_PAY_URL);
+            Log.d(TAG, "payUrl: " + MemberBean.payUrl);
+            Log.d(TAG, "WEB?????" + WEB_SCAN_TO_PAY_URL);
+        }
     }
 
     public void getpaymenturl() {
