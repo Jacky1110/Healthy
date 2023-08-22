@@ -24,15 +24,9 @@ android {
     defaultConfig {
         applicationId "com.jotangi.healthy"
         minSdkVersion 28
-<<<<<<< HEAD
-        targetSdkVersion 31
-        versionCode 31
-        versionName "1.17"
-=======
         targetSdkVersion 33
         versionCode 33
         versionName "1.19"
->>>>>>> master
         signingConfig signingConfigs.debug
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

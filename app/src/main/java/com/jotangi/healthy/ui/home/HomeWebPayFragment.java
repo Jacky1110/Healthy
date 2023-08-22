@@ -80,15 +80,9 @@ public class HomeWebPayFragment extends ProjConstraintFragment {
     }
 
     private void loadWebView() {
-<<<<<<< HEAD
-        if (MemberBean.payUrl.equals("https://pay.digimed.tw/medicalec/app-stores.php?")) {
-
-            String WEB_SCAN_TO_PAY_URL = MemberBean.payment_url + "?sid=" + MemberBean.barcode_id + "&mid=" + MemberBean.mid;
-=======
         if (MemberBean.payUrl.contains("medicalec")) {
 
             String WEB_SCAN_TO_PAY_URL = ApiUrl.homePay + "?sid=" + MemberBean.barcode_id + "&mid=" + MemberBean.mid;
->>>>>>> master
             initWebview();
             webView.loadUrl(WEB_SCAN_TO_PAY_URL);
             MemberBean.channel_id = 3;
@@ -96,11 +90,7 @@ public class HomeWebPayFragment extends ProjConstraintFragment {
             Log.d(TAG, "payUrl: " + MemberBean.payUrl);
             Log.d(TAG, "WEB?????" + WEB_SCAN_TO_PAY_URL);
 
-<<<<<<< HEAD
-        } else if (MemberBean.payUrl.equals("https://pay.digimed.tw/sy/payindex.php?")) {
-=======
         } else {
->>>>>>> master
             String WEB_SCAN_TO_PAY_URL = MemberBean.payUrl + "sid=" + MemberBean.barcode_id;
             initWebview();
 //            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(WEB_SCAN_TO_PAY_URL));
