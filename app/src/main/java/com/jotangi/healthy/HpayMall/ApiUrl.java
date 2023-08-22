@@ -15,6 +15,7 @@ public class ApiUrl {
 //    public static final String API_URL = "https://tripspottest.jotangi.net/";
     public static final String API_URL = "https://pay.digimed.tw/";
     public static final String payUrl = API_URL + "ecpay/ecpayindex.php?orderid=";
+    public static final String homePay = API_URL + "/medicalec/payindex.php";
     //https://tripspottest.jotangi.net/ecpay/ecpayindex.php?orderid=
     //public static final String API_URL = "http://211.20.185.2/medicalec/api/";
     //https://tripspottest.jotangi.net/medicalec/api
