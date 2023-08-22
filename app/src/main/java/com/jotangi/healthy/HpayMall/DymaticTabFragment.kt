@@ -99,7 +99,7 @@ class DymaticTabFragment : ProjConstraintFragment() {
 
         /*確保登入後才能查詢上方動態列表*/
         if (istrue != true) {
-            GetProType()
+//            GetProType()
             if (MemberBean.barcode_id != null) {
                 CheckStoreInfo()
             }
@@ -129,7 +129,7 @@ class DymaticTabFragment : ProjConstraintFragment() {
                         val key: Int = it.next()
                         val value: String? = ProTypeMap.get(0)
                         value?.let { it1 ->
-                            GetProList(it1)
+//                            GetProList(it1)
                         }
                     }
 //                    istrue == false
@@ -186,7 +186,9 @@ class DymaticTabFragment : ProjConstraintFragment() {
                             val key: Int = it.next()
                             if (position == key) {
                                 val value: String? = ProTypeMap.get(position)
-                                value?.let { it1 -> GetProList(it1) }
+                                value?.let { it1 ->
+//                                    GetProList(it1)
+                                }
                             }
                         }
                     }

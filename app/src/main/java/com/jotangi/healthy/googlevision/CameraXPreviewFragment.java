@@ -348,6 +348,7 @@ public final class CameraXPreviewFragment extends ProjConstraintFragment
                                         if (MemberBean.barcode != null) {
                                             //https://medicalec.jotangi.net/medicalec/app-stores.php?sid=149
                                             String str1 = MemberBean.barcode.substring(0, MemberBean.barcode.indexOf("sid="));
+                                            MemberBean.payUrl = str1;
                                             String str2 = MemberBean.barcode.substring(str1.length() + 4, MemberBean.barcode.length());
                                             Log.d(TAG, "MemberBean.barcode: " + MemberBean.barcode);
                                             Log.d(TAG, "str1: " + str1);
