@@ -32,6 +32,9 @@
     <string name="logout">登出</string>
     <string name="register">註冊</string>
     <string name="account_rule">會員使用條款</string>
+    <string name="Store_name">店名：醫電數位轉型股份有限公司</string>
+    <string name="Store_tel">電話：02-2658-1678</string>
+
 
     <string name="welcome_back">歡迎回來</string>
     <string name="mobile_number">手機號碼</string>

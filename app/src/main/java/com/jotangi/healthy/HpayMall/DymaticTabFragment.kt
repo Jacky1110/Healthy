@@ -138,11 +138,11 @@ class DymaticTabFragment : ProjConstraintFragment() {
 
         }
         val btncart: ImageButton = requireActivity().findViewById(R.id.btn_car)
-        if (MemberBean.member_id == null && MemberBean.member_pwd == null) {
-            btncart.visibility = View.VISIBLE
-        } else {
-            btncart.visibility = View.VISIBLE
-        }
+//        if (MemberBean.member_id == null && MemberBean.member_pwd == null) {
+//            btncart.visibility = View.VISIBLE
+//        } else {
+//            btncart.visibility = View.VISIBLE
+//        }
 
         return root
     }

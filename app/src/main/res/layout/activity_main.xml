@@ -52,25 +52,26 @@
             android:drawableTint="@color/bottombar_text_selector"
             android:drawableTop="@drawable/ic_bar_home"
             />
+
         <RadioButton
             android:id="@+id/bn_mall"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center"
-            android:textSize="@dimen/bottombar_textsize"
-            android:textColor="@color/bottombar_text_selector"
             android:background="@android:color/transparent"
             android:button="@android:color/transparent"
             android:checked="false"
+            android:drawableTop="@drawable/icon_hpay_mall"
+            android:drawableTint="@color/bottombar_text_selector"
+            android:gravity="center"
             android:paddingLeft="16dp"
             android:paddingTop="16dp"
             android:paddingRight="16dp"
             android:paddingBottom="16dp"
             android:text="@string/title_mall"
-            android:drawableTint="@color/bottombar_text_selector"
-            android:drawableTop="@drawable/icon_hpay_mall"
-            />
+            android:textColor="@color/bottombar_text_selector"
+            android:textSize="@dimen/bottombar_textsize"
+            android:visibility="gone" />
         <RadioButton
             android:id="@+id/bn_account"
             android:layout_width="0dp"
@@ -186,10 +187,11 @@
             android:id="@+id/btn_car"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_shopping_cart"
             android:background="@null"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@+id/guideline51"
             app:layout_constraintTop_toTopOf="@+id/guideline13"
-            app:layout_constraintStart_toStartOf="@+id/guideline51"/>
+            app:srcCompat="@drawable/ic_shopping_cart" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

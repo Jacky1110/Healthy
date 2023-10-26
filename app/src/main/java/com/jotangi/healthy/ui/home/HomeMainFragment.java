@@ -127,12 +127,12 @@ public class HomeMainFragment extends ProjConstraintFragment {
         super.initViews();
 //        what();
         tvPoint = rootView.findViewById(R.id.tv_point_value);
-        btncart = getActivity().findViewById(R.id.btn_car);
-        if (MemberBean.member_id == null && MemberBean.member_pwd == null) {
-            btncart.setVisibility(View.VISIBLE);
-        } else {
-            btncart.setVisibility(View.VISIBLE);
-        }
+//        btncart = getActivity().findViewById(R.id.btn_car);
+//        if (MemberBean.member_id == null && MemberBean.member_pwd == null) {
+//            btncart.setVisibility(View.VISIBLE);
+//        } else {
+//            btncart.setVisibility(View.VISIBLE);
+//        }
 
         bnScanQRCode = rootView.findViewById(R.id.layout_scan_qrcode);
         Bundle data = getArguments();

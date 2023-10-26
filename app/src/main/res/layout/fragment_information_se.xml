@@ -61,7 +61,7 @@
                     android:layout_height="50dp"
                     android:layout_marginStart="20dp"
                     android:fontFamily="sans-serif-condensed-light"
-                    android:text="店家：盛雲電商股份有限公司"
+                    android:text="@string/Store_name"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
@@ -78,7 +78,7 @@
                     android:layout_height="50dp"
                     android:layout_marginStart="20dp"
                     android:fontFamily="sans-serif-condensed-light"
-                    android:text="電話：02-2799-7868"
+                    android:text="@string/Store_tel"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 

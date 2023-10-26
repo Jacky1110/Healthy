@@ -119,7 +119,7 @@ public class AccountMainFragment extends ProjConstraintFragment {
         tvPoint.setText(MemberBean.member_totalpoints);
         tvName.setText(MemberBean.member_name);
         btncart = getActivity().findViewById(R.id.btn_car);
-        btncart.setVisibility(View.VISIBLE);
+//        btncart.setVisibility(View.VISIBLE);
 
         bnAccountData = rootView.findViewById(R.id.item_account);
         bnAccountData.setOnClickListener(new View.OnClickListener() {
